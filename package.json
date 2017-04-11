@@ -4,6 +4,7 @@
   "description": "",
   "repository": {},
   "dependencies": {
+    "dateformat": "^2.0.0",
     "leaflet": "^1.0.3",
     "lsv-components": "latest",
     "lsv-interactive": "latest",

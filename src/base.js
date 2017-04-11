@@ -14,7 +14,8 @@ class Base extends Component {
 
     this.state = {
       data: [],
-      current: 0
+      current: 0,
+      currentDate: false
     }
   }
 

@@ -8,6 +8,14 @@
   color: map(colors, primary, dark);
   margin: 0;
   font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.date {
+  display: block;
+  font-size: .8em;
+  font-weight: 300;
 }
 
 .number {

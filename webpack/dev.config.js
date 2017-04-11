@@ -5,7 +5,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 //process.traceDeprecation = true;
 
 const config = {
-  entry: './debug.js',
+  entry: ['whatwg-fetch', './debug.js'],
   output: {
     //path: __dirname,
     filename: './script.js'
@@ -57,6 +57,13 @@ const config = {
       {
         test: /\.(csv|tsv)$/,
         loaders: ['dsv-loader']
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   },

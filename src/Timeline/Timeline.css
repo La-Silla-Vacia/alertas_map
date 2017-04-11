@@ -1,0 +1,54 @@
+.container {
+  background-color: map(colors, secondary, light);
+  height: 3em;
+  position: relative;
+}
+
+.item {
+  width: 2px;
+  height: 100%;
+  background-color: map(colors, primary, dark);
+  position: absolute;
+  font-size: .85em;
+  border: 0;
+  padding: 0;
+  transition: .4s;
+  transform: translate(-50%);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: map(colors, primary, base);
+
+    .title {
+      display: block;
+    }
+  }
+}
+
+.title {
+  display: none;
+  background-color: map(colors, primary, xdark);
+  padding: 5px;
+  position: absolute;
+  color: #fff;
+  border-radius: 3px;
+  top: 50%;
+  left: 0;
+  transform: translate(.7em, -50%);
+  z-index: 400;
+  width: 9em;
+  text-align: left;
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: .8em solid transparent;
+    border-bottom: .8em solid transparent;
+    border-right: .8em solid map(colors, primary, xdark);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+  }
+}

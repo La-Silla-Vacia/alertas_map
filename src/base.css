@@ -1,6 +1,17 @@
 .container {
   font-family: map(fonts, family-sans);
   font-size: 16px;
-  background-color: map(colors, primary, base);
+  /*background-color: map(colors, primary, base);*/
   display: block;
+}
+
+.sectionLeft {
+  width: 60%;
+  float: left;
+}
+
+.sectionRight {
+  width: 40%;
+  float: left;
+  padding-left: 1em;
 }

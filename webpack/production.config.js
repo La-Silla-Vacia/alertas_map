@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack'); //to access built-in plugins
 
 const config = {
-  entry: './debug.js',
+  entry: ['whatwg-fetch', './debug.js'],
   output: {
     // path: path.resolve(__dirname, '../dist'),
     filename: './dist/script-min.js'
